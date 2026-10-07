@@ -1,0 +1,32 @@
+.navbar-right-text {
+  position: absolute;
+  right: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Arial Black", Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000000;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 4rem;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
