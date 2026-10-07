@@ -1,12 +1,23 @@
-.navbar-right-text {
-  position: absolute;
-  right: 2rem;
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-family: "Arial Black", Impact, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.navbar-burger {
   color: #000000;
+  margin-left: auto;
+}
+.navbar-burger:focus {
+  outline: none;
+  box-shadow: none;
+}
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-content {
+  flex-grow: 1;
 }
 html {
   scroll-behavior: smooth;
@@ -24,9 +35,4 @@ section {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }

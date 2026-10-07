@@ -13,39 +13,74 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
-    <nav class="navbar is-white has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
-  
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger ml-0" aria-label="menu" aria-expanded="false" data-target="navbarMenu" style="z-index: 20;">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3.25rem; display: flex; align-items: center; justify-content: center; z-index: 10; pointer-events: none;">
-      <span class="has-text-dark is-uppercase has-text-weight-bold is-size-5-mobile is-size-4-desktop" style="letter-spacing: 2px;">
-        reincarnation
-      </span>
-    </div>
-  </div>
+    <nav
+      class="navbar is-white has-shadow is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            pointer-events: none;
+          "
+        >
+          <span
+            class="has-text-dark is-uppercase has-text-weight-bold is-size-5-mobile is-size-4-desktop"
+            style="letter-spacing: 2px"
+          >
+            reincarnation
+          </span>
+        </div>
+        <a
+          class="navbar-burger"
+          role="button"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-  <div id="navbarMenu" class="navbar-menu">
-    <div class="navbar-start pl-4">
-      <div class="navbar-item">
-        <div class="buttons is-centered">
-          <a href="#about" class="button is-black is-medium is-outlined">Whoami</a>
-          <a href="#projekte" class="button is-black is-medium is-outlined">Projekte</a>
-          <a href="#kontakt" class="button is-black is-medium is-outlined">Kontakt</a>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end pr-4">
+          <div class="navbar-item">
+            <div class="buttons is-centered">
+              <a href="#about" class="button is-black is-medium is-outlined"
+                >Whoami</a
+              >
+              <a href="#projekte" class="button is-black is-medium is-outlined"
+                >Projekte</a
+              >
+              <a href="#kontakt" class="button is-black is-medium is-outlined"
+                >Kontakt</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
+
     <section id="about" class="section is-medium has-background-dark">
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column is-6">
-            <h1 class="title is-2">reincarnation@nzz:~$ whoami</h1>
-            <div class="content is-medium">
+            <h1 class="title is-2 is-size-4-mobile has-text-light">
+              reincarnation@nzz:~$ whoami
+            </h1>
+            <div class="content is-medium has-text-light">
               <p>
                 Hallo, mein Name ist Alex. Ich bin Applikationsentwickler EFZ
                 aus der Schweiz und arbeite gerne an der Schnittstelle von Code
@@ -74,157 +109,211 @@
         </div>
       </div>
     </section>
+
     <section id="projekte" class="section has-background-grey">
       <div class="container">
-        <h2 class="title is-2 mb-6">reincarnation@nzz:~$ projects</h2>
+        <h2 class="title is-2 is-size-4-mobile has-text-light">
+          reincarnation@nzz:~$ projects
+        </h2>
 
         <div class="columns is-multiline">
           <div class="column is-4">
-            <a href="https://github.com/krinzhanovskyi/windows_reincarnation"
+            <a
+              href="https://github.com/krinzhanovskyi/windows_reincarnation"
               target="_blank"
-              rel="noopener noreferrer">
-            <div class="card h-100">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="projekt1.png" alt="Projekt 1" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p class="title is-4">Python Desktop Tool</p>
-                <div class="content">
-                  Ein mit @PyQt6 entwickeltes Desktop-Utility zur Vorschau von
-                  Ordnerinhalten beim Hovern.
+              rel="noopener noreferrer"
+              class="card-link"
+            >
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="projekt1.png" alt="Projekt 1" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Python Desktop Tool</p>
+                  <div class="content">
+                    Ein mit @PyQt6 entwickeltes Desktop-Utility zur Vorschau von
+                    Ordnerinhalten beim Hovern.
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
           </div>
 
           <div class="column is-4">
-            <a href="https://github.com/krinzhanovskyi/texter_reincarnation"
+            <a
+              href="https://github.com/krinzhanovskyi/texter_reincarnation"
               target="_blank"
-              rel="noopener noreferrer">
-            <div class="card h-100">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="projekt2.png" alt="Projekt 2" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p class="title is-4 text-is-">Text schreiber</p>
-                <div class="content">
-                  Simulation menschlicher Schreibgeschwindigkeit mit
-                  übermenschlicher Geschwindigkeit.
+              rel="noopener noreferrer"
+              class="card-link"
+            >
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="projekt2.png" alt="Projekt 2" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Text schreiber</p>
+                  <div class="content">
+                    Simulation menschlicher Schreibgeschwindigkeit mit
+                    übermenschlicher Geschwindigkeit.
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
           </div>
 
           <div class="column is-4">
-            <a href="https://github.com/krinzhanovskyi/parcer_reincarnation"
+            <a
+              href="https://github.com/krinzhanovskyi/parcer_reincarnation"
               target="_blank"
-              rel="noopener noreferrer">
-            <div class="card h-100">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img  target="_blank" src="projekt3.png" alt="Projekt 3" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p class="title is-4">Parcer</p>
-                <div class="content">
-                  Daten aus verschiedenen Quellen mit hilfe von @Dataclasses in
-                  einem gleichen Format zu speichern.
+              rel="noopener noreferrer"
+              class="card-link"
+            >
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="projekt3.png" alt="Projekt 3" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4 is-size-4-mobile">Parser</p>
+                  <div class="content">
+                    Daten aus verschiedenen Quellen mit Hilfe von @Dataclasses
+                    in einem gleichen Format zu speichern.
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
-        </a>
       </div>
     </section>
+
     <section id="kontakt" class="section is-medium has-background-dark">
-    <div class="container">
-      <h2 class="title is-2 mb-6">reincarnation@nzz:~$ kontakts</h2>
-      
-      <div class="columns is-centered">
-        <div class="column is-3 has-text-centered">
-          <a href="mailto:krizhanovskyi.alex@gmail.com" class="box is-shadowless" style="border: 2px solid #dbdbdb;">
-            <div class="card-image">
+      <div class="container">
+        <h2 class="title is-2 is-size-4-mobile has-text-light">
+          reincarnation@nzz:~$ kontakte
+        </h2>
+
+        <div class="columns is-centered mt-4">
+          <div class="column is-3 has-text-centered">
+            <a
+              href="mailto:krizhanovskyi.alex@gmail.com"
+              class="box is-shadowless"
+              style="border: 2px solid #dbdbdb"
+            >
+              <div class="card-image">
                 <figure class="image is-4by3">
-                    <img    src="email.png" 
-                            alt="E-Mail profile" 
-                            style="border-radius: 16px; object-fit: cover;" />
+                  <img
+                    src="email.png"
+                    alt="E-Mail profile"
+                    style="border-radius: 16px; object-fit: cover"
+                  />
                 </figure>
               </div>
-          </a>
-        </div>
-        
-        <div class="column is-3 has-text-centered">
-          <a href="https://t.me/krinzhanovskyi" target="_blank" rel="noopener noreferrer" class="box is-shadowless" style="border: 2px solid #dbdbdb;">
-            <div class="card-image">
+            </a>
+          </div>
+
+          <div class="column is-3 has-text-centered">
+            <a
+              href="https://t.me/krinzhanovskyi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="box is-shadowless"
+              style="border: 2px solid #dbdbdb"
+            >
+              <div class="card-image">
                 <figure class="image is-4by3">
-                    <img    src="tg.png" 
-                            alt="tg profile" 
-                            style="border-radius: 16px; object-fit: cover;" />
+                  <img
+                    src="tg.png"
+                    alt="tg profile"
+                    style="border-radius: 16px; object-fit: cover"
+                  />
                 </figure>
               </div>
-          </a>
-        </div>
-        
-        <div class="column is-3 has-text-centered">
-          <a href="tel:+41765337448" class="box is-shadowless" style="border: 2px solid #dbdbdb;">
-            <div class="card-image">
+            </a>
+          </div>
+
+          <div class="column is-3 has-text-centered">
+            <a
+              href="tel:+41765337448"
+              class="box is-shadowless"
+              style="border: 2px solid #dbdbdb"
+            >
+              <div class="card-image">
                 <figure class="image is-4by3">
-                    <img    src="tel.png" 
-                            alt="phone calling reincarnation" 
-                            style="border-radius: 16px; object-fit: cover;" />
+                  <img
+                    src="tel.png"
+                    alt="phone calling reincarnation"
+                    style="border-radius: 16px; object-fit: cover"
+                  />
                 </figure>
               </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer pb-6 pt-6 has-background-dark">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Portfolio</strong> by reincarnation. &copy; 2026
-      </p>
-    </div>
-  </footer>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    
-    if ($navbarBurgers.length > 0) {
-      $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
+    </section>
 
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
+    <footer class="footer pb-6 pt-6 has-background-dark">
+      <div class="content has-text-centered has-text-light">
+        <p>
+          <strong class="has-text-light">Portfolio</strong> by reincarnation.
+          &copy; 2026
+        </p>
+      </div>
+    </footer>
 
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const burgers = document.querySelectorAll(".navbar-burger");
+
+        const closeMenu = (burger) => {
+          const target = document.getElementById(burger.dataset.target);
+          burger.classList.remove("is-active");
+          burger.setAttribute("aria-expanded", "false");
+          if (target) {
+            target.classList.remove("is-active");
+          }
+        };
+
+        burgers.forEach((burger) => {
+          burger.addEventListener("click", () => {
+            const target = document.getElementById(burger.dataset.target);
+            if (!target) return;
+            const isOpen = burger.classList.toggle("is-active");
+            target.classList.toggle("is-active", isOpen);
+            burger.setAttribute("aria-expanded", isOpen);
+          });
         });
-      });
-    }
-    const $navbarItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
-    $navbarItems.forEach(el => {
-      if (el.hasAttribute('href')) {
-        el.addEventListener('click', () => {
-          const $menu = document.getElementById('mobileMenu');
-          const $burger = document.querySelector('.navbar-burger');
-          if ($menu.classList.contains('is-active')) {
-            $menu.classList.remove('is-active');
-            $burger.classList.remove('is-active');
+
+        document
+          .querySelectorAll(".navbar-menu .navbar-item")
+          .forEach((item) => {
+            item.addEventListener("click", () => {
+              burgers.forEach(closeMenu);
+            });
+          });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".navbar")) {
+            burgers.forEach((burger) => {
+              if (burger.classList.contains("is-active")) {
+                closeMenu(burger);
+              }
+            });
           }
         });
-      }
-    });
-  });
-</script>
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            burgers.forEach(closeMenu);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
