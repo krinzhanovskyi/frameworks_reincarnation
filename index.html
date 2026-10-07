@@ -195,64 +195,64 @@
     <section id="kontakt" class="section is-medium has-background-dark">
       <div class="container">
         <h2 class="title is-2 is-size-4-mobile has-text-light">
-          reincarnation@nzz:~$ kontakte
+          reincarnation@nzz:~$ kontaktformular
         </h2>
 
-        <div class="columns is-centered mt-4">
-          <div class="column is-3 has-text-centered">
-            <a
-              href="mailto:krizhanovskyi.alex@gmail.com"
-              class="box is-shadowless"
-              style="border: 2px solid #dbdbdb"
-            >
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="email.png"
-                    alt="E-Mail profile"
-                    style="border-radius: 16px; object-fit: cover"
-                  />
-                </figure>
-              </div>
-            </a>
-          </div>
+        <div class="columns is-centered mt-5">
+          <div class="column is-7">
+            <div class="box has-background-grey-dark is-shadowless">
+              <form action="https://formspree.io/f/mkjojnrd" method="POST">
+                <div class="field">
+                  <label class="label has-text-light">Name</label>
+                  <div class="control">
+                    <input
+                      class="input has-background-black-ter has-text-light"
+                      type="text"
+                      name="name"
+                      placeholder="Ihr Name"
+                      required
+                    />
+                  </div>
+                </div>
 
-          <div class="column is-3 has-text-centered">
-            <a
-              href="https://t.me/krinzhanovskyi"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="box is-shadowless"
-              style="border: 2px solid #dbdbdb"
-            >
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="tg.png"
-                    alt="tg profile"
-                    style="border-radius: 16px; object-fit: cover"
-                  />
-                </figure>
-              </div>
-            </a>
-          </div>
+                <div class="field">
+                  <label class="label has-text-light">E-Mail</label>
+                  <div class="control">
+                    <input
+                      class="input has-background-black-ter has-text-light"
+                      type="email"
+                      name="email"
+                      placeholder="ihre.email@beispiel.com"
+                      required
+                    />
+                  </div>
+                </div>
 
-          <div class="column is-3 has-text-centered">
-            <a
-              href="tel:+41765337448"
-              class="box is-shadowless"
-              style="border: 2px solid #dbdbdb"
-            >
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="tel.png"
-                    alt="phone calling reincarnation"
-                    style="border-radius: 16px; object-fit: cover"
-                  />
-                </figure>
-              </div>
-            </a>
+                <div class="field">
+                  <label class="label has-text-light">Nachricht</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea has-background-black-ter has-text-light"
+                      name="message"
+                      placeholder="Was möchten Sie mir mitteilen?"
+                      rows="6"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="field is-grouped is-grouped-right mt-5">
+                  <div class="control">
+                    <button
+                      type="submit"
+                      class="button is-light is-outlined is-medium"
+                    >
+                      Nachricht senden
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
