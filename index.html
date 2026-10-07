@@ -25,11 +25,24 @@
       html {
         scroll-behavior: smooth;
       }
+      section {
+        scroll-margin-top: 4rem;
+      }
 
       .card:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         transform: translateY(-5px);
         transition: all 0.3s ease;
+      }
+      .card-image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
       }
     </style>
   </head>
@@ -74,5 +87,159 @@
         </div>
       </div>
     </nav>
+    <section id="about" class="section is-medium">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <h1 class="title is-2">reincarnation@nzz:~$ whoami</h1>
+            <div class="content is-medium">
+              <p>
+                Hallo, mein Name ist Alex. Ich bin Applikationsentwickler EFZ
+                aus der Schweiz und arbeite gerne an der Schnittstelle von Code
+                und Design.
+              </p>
+              <p>
+                Ich bin ein Entwickler von Mini-Apps und Hilfsprogrammen, die
+                ich in meiner Freizeit entwickle. Ich habe ein starkes Interesse
+                an der Entwicklung von Software, die das Leben der Menschen
+                verbessert und erleichtert. Ich bin immer auf der Suche nach
+                neuen Herausforderungen und Möglichkeiten, meine Fähigkeiten zu
+                erweitern.
+              </p>
+            </div>
+          </div>
+          <div class="column is-6 has-text-centered">
+            <figure class="image is-inline-block">
+              <img
+                class="is-rounded"
+                src="IMG_4263.jpg"
+                alt="Foto von Alex"
+                style="max-width: 350px; width: 100%"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projekte" class="section has-background-light">
+      <div class="container">
+        <h2 class="title is-2 mb-6 has-text-black">Projekte</h2>
+
+        <div class="columns is-multiline">
+          <div class="column is-4">
+            <a href="https://github.com/krinzhanovskyi/windows_reincarnation"
+              target="_blank"
+              rel="noopener noreferrer">
+            <div class="card h-100">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="projekt1.png" alt="Projekt 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Python Desktop Tool</p>
+                <div class="content">
+                  Ein mit @PyQt6 entwickeltes Desktop-Utility zur Vorschau von
+                  Ordnerinhalten beim Hovern.
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="column is-4">
+            <a href="https://github.com/krinzhanovskyi/texter_reincarnation"
+              target="_blank"
+              rel="noopener noreferrer">
+            <div class="card h-100">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="projekt2.png" alt="Projekt 2" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Text schreiber</p>
+                <div class="content">
+                  Simulation menschlicher Schreibgeschwindigkeit mit
+                  übermenschlicher Geschwindigkeit.
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="column is-4">
+            <a href="https://github.com/krinzhanovskyi/parcer_reincarnation"
+              target="_blank"
+              rel="noopener noreferrer">
+            <div class="card h-100">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img  target="_blank" src="projekt3.png" alt="Projekt 3" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Parcer</p>
+                <div class="content">
+                  Daten aus verschiedenen Quellen mit hilfe von @Dataclasses in
+                  einem gleichen Format zu speichern.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </section>
+    <section id="kontakt" class="section">
+    <div class="container">
+      <h2 class="title is-2 mb-6">Kontakt</h2>
+      
+      <div class="columns is-centered">
+        <div class="column is-3 has-text-centered">
+          <a href="mailto:krizhanovskyi.alex@gmail.com" class="box is-shadowless" style="border: 2px solid #dbdbdb;">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img    src="email.png" 
+                            alt="E-Mail profile" 
+                            style="border-radius: 16px; object-fit: cover;" />
+                </figure>
+              </div>
+          </a>
+        </div>
+        
+        <div class="column is-3 has-text-centered">
+          <a href="https://t.me/krinzhanovskyi" target="_blank" rel="noopener noreferrer" class="box is-shadowless" style="border: 2px solid #dbdbdb;">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img    src="tg.png" 
+                            alt="tg profile" 
+                            style="border-radius: 16px; object-fit: cover;" />
+                </figure>
+              </div>
+          </a>
+        </div>
+        
+        <div class="column is-3 has-text-centered">
+          <a href="tel:+41765337448" class="box is-shadowless" style="border: 2px solid #dbdbdb;">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img    src="tel.png" 
+                            alt="phone calling reincarnation" 
+                            style="border-radius: 16px; object-fit: cover;" />
+                </figure>
+              </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer pb-6 pt-6">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Portfolio</strong> by reincarnation. &copy; 2026
+      </p>
+    </div>
+  </footer>
   </body>
 </html>
