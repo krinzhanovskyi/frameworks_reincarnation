@@ -36,3 +36,16 @@ section {
   width: 100%;
   height: 100%;
 }
+.input:focus,
+.input:focus-within,
+.is-focused.input,
+.is-focused.textarea,
+.select select.is-focused,
+.select select:focus,
+.select select:focus-within,
+.textarea:focus,
+.textarea:focus-within {
+  border-color: #dbdbdb;
+  box-shadow: 0 0 0 0.125em rgba(219, 219, 219, 0.25);
+  outline: none;
+}
