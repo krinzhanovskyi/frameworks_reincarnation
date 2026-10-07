@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whoami | reincarnation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+
+    <style>
+      .navbar-center-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: "Arial Black", Impact, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #000000;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar is-white has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start pl-4">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="#about" class="button is-black is-medium is-outlined"
+                >Whoami</a
+              >
+              <a href="#projekte" class="button is-black is-medium is-outlined"
+                >Projekte</a
+              >
+              <a href="#kontakt" class="button is-black is-medium is-outlined"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="navbar-item navbar-center-text is-hidden-mobile">
+          reincarnation
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
