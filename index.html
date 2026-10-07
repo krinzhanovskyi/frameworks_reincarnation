@@ -13,46 +13,33 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
-    <nav
-      class="navbar is-white has-shadow"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarMenu"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+    <nav class="navbar is-white has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+  
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger ml-0" aria-label="menu" aria-expanded="false" data-target="navbarMenu" style="z-index: 20;">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3.25rem; display: flex; align-items: center; justify-content: center; z-index: 10; pointer-events: none;">
+      <span class="has-text-dark is-uppercase has-text-weight-bold is-size-5-mobile is-size-4-desktop" style="letter-spacing: 2px;">
+        reincarnation
+      </span>
+    </div>
+  </div>
 
-      <div id="navbarMenu" class="navbar-menu">
-        <div class="navbar-start pl-4">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a href="#about" class="button is-black is-medium is-outlined"
-                >Whoami</a
-              >
-              <a href="#projekte" class="button is-black is-medium is-outlined"
-                >Projekte</a
-              >
-              <a href="#kontakt" class="button is-black is-medium is-outlined"
-                >Kontakt</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="navbar-item navbar-right-text is-hidden-mobile">
-          reincarnation
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-start pl-4">
+      <div class="navbar-item">
+        <div class="buttons is-centered">
+          <a href="#about" class="button is-black is-medium is-outlined">Whoami</a>
+          <a href="#projekte" class="button is-black is-medium is-outlined">Projekte</a>
+          <a href="#kontakt" class="button is-black is-medium is-outlined">Kontakt</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
     <section id="about" class="section is-medium has-background-dark">
       <div class="container">
         <div class="columns is-vcentered">
@@ -159,7 +146,7 @@
     </section>
     <section id="kontakt" class="section is-medium has-background-dark">
     <div class="container">
-      <h2 class="title is-2 mb-6">reincarnation@nzz:~$ kontakt</h2>
+      <h2 class="title is-2 mb-6">reincarnation@nzz:~$ kontakts</h2>
       
       <div class="columns is-centered">
         <div class="column is-3 has-text-centered">
@@ -209,19 +196,35 @@
   </footer>
   
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      if ($navbarBurgers.length > 0) {
-        $navbarBurgers.forEach( el => {
-          el.addEventListener('click', () => {
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
+  document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+    const $navbarItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
+    $navbarItems.forEach(el => {
+      if (el.hasAttribute('href')) {
+        el.addEventListener('click', () => {
+          const $menu = document.getElementById('mobileMenu');
+          const $burger = document.querySelector('.navbar-burger');
+          if ($menu.classList.contains('is-active')) {
+            $menu.classList.remove('is-active');
+            $burger.classList.remove('is-active');
+          }
         });
       }
     });
-  </script>
+  });
+</script>
   </body>
 </html>
