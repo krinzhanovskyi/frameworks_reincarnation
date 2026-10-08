@@ -13,251 +13,255 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
-    <nav
-      class="navbar is-white has-shadow is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <div
-          style="
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3.25rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-            pointer-events: none;
-          "
-        >
-          <span
-            class="has-text-dark is-uppercase has-text-weight-bold is-size-5-mobile is-size-4-desktop"
-            style="letter-spacing: 2px"
+    <header>
+      <nav
+        class="navbar is-white has-shadow is-fixed-top"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 3.25rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 10;
+              pointer-events: none;
+            "
           >
-            reincarnation
-          </span>
+            <span
+              class="has-text-dark is-uppercase has-text-weight-bold is-size-5-mobile is-size-4-desktop"
+              style="letter-spacing: 2px"
+            >
+              reincarnation
+            </span>
+          </div>
+          <a
+            class="navbar-burger"
+            role="button"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-        <a
-          class="navbar-burger"
-          role="button"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarMenu"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
 
-      <div id="navbarMenu" class="navbar-menu">
-        <div class="navbar-end pr-4">
-          <div class="navbar-item">
-            <div class="buttons is-centered">
-              <a href="#about" class="button is-black is-medium is-outlined"
-                >Whoami</a
-              >
-              <a href="#projekte" class="button is-black is-medium is-outlined"
-                >Projekte</a
-              >
-              <a href="#kontakt" class="button is-black is-medium is-outlined"
-                >Kontakt</a
-              >
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end pr-4">
+            <div class="navbar-item">
+              <div class="buttons is-centered">
+                <a href="#about" class="button is-black is-medium is-outlined"
+                  >Whoami</a
+                >
+                <a
+                  href="#projekte"
+                  class="button is-black is-medium is-outlined"
+                  >Projekte</a
+                >
+                <a href="#kontakt" class="button is-black is-medium is-outlined"
+                  >Kontakt</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-
-    <section id="about" class="section is-medium has-background-dark">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column is-6">
-            <h1 class="title is-2 is-size-4-mobile has-text-light">
-              reincarnation@nzz:~$ whoami
-            </h1>
-            <div class="content is-medium has-text-light">
-              <p>
-                Hallo, mein Name ist Alex. Ich bin Applikationsentwickler EFZ
-                aus der Schweiz und arbeite gerne an der Schnittstelle von Code
-                und Design.
-              </p>
-              <p>
-                Ich bin ein Entwickler von Mini-Apps und Hilfsprogrammen, die
-                ich in meiner Freizeit entwickle. Ich habe ein starkes Interesse
-                an der Entwicklung von Software, die das Leben der Menschen
-                verbessert und erleichtert. Ich bin immer auf der Suche nach
-                neuen Herausforderungen und Möglichkeiten, meine Fähigkeiten zu
-                erweitern.
-              </p>
+      </nav>
+    </header>
+    <main>
+      <section id="about" class="section is-medium has-background-dark">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-6">
+              <h1 class="title is-2 is-size-4-mobile has-text-light">
+                reincarnation@nzz:~$ whoami
+              </h1>
+              <div class="content is-medium has-text-light">
+                <p>
+                  Hallo, mein Name ist Alex. Ich bin Applikationsentwickler EFZ
+                  aus der Schweiz und arbeite gerne an der Schnittstelle von
+                  Code und Design.
+                </p>
+                <p>
+                  Ich bin ein Entwickler von Mini-Apps und Hilfsprogrammen, die
+                  ich in meiner Freizeit entwickle. Ich habe ein starkes
+                  Interesse an der Entwicklung von Software, die das Leben der
+                  Menschen verbessert und erleichtert. Ich bin immer auf der
+                  Suche nach neuen Herausforderungen und Möglichkeiten, meine
+                  Fähigkeiten zu erweitern.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="column is-6 has-text-centered">
-            <figure class="image is-inline-block">
-              <img
-                class="is-rounded"
-                src="IMG_4263.jpg"
-                alt="Foto von Alex"
-                style="max-width: 350px; width: 100%"
-              />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projekte" class="section has-background-grey">
-      <div class="container">
-        <h2 class="title is-2 is-size-4-mobile has-text-light">
-          reincarnation@nzz:~$ projects
-        </h2>
-
-        <div class="columns is-multiline">
-          <div class="column is-4">
-            <a
-              href="https://github.com/krinzhanovskyi/windows_reincarnation"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="card-link"
-            >
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="projekt1.png" alt="Projekt 1" />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">Python Desktop Tool</p>
-                  <div class="content">
-                    Ein mit @PyQt6 entwickeltes Desktop-Utility zur Vorschau von
-                    Ordnerinhalten beim Hovern.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column is-4">
-            <a
-              href="https://github.com/krinzhanovskyi/texter_reincarnation"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="card-link"
-            >
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="projekt2.png" alt="Projekt 2" />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4">Text schreiber</p>
-                  <div class="content">
-                    Simulation menschlicher Schreibgeschwindigkeit mit
-                    übermenschlicher Geschwindigkeit.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="column is-4">
-            <a
-              href="https://github.com/krinzhanovskyi/parcer_reincarnation"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="card-link"
-            >
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="projekt3.png" alt="Projekt 3" />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="title is-4 is-size-4-mobile">Parser</p>
-                  <div class="content">
-                    Daten aus verschiedenen Quellen mit Hilfe von @Dataclasses
-                    in einem gleichen Format zu speichern.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="section is-medium has-background-dark">
-      <div class="container">
-        <h2 class="title is-2 is-size-4-mobile has-text-light">
-          reincarnation@nzz:~$ kontaktformular
-        </h2>
-
-        <div class="columns is-centered mt-5">
-          <div class="column is-7">
-            <div class="box has-background-grey-dark is-shadowless">
-              <form action="https://formspree.io/f/mkjojnrd" method="POST">
-                <div class="field">
-                  <label class="label has-text-light">Name</label>
-                  <div class="control">
-                    <input
-                      class="input has-background-black-ter has-text-light"
-                      type="text"
-                      name="name"
-                      placeholder="Ihr Name"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="field">
-                  <label class="label has-text-light">E-Mail</label>
-                  <div class="control">
-                    <input
-                      class="input has-background-black-ter has-text-light"
-                      type="email"
-                      name="email"
-                      placeholder="ihre.email@beispiel.com"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="field">
-                  <label class="label has-text-light">Nachricht</label>
-                  <div class="control">
-                    <textarea
-                      class="textarea has-background-black-ter has-text-light"
-                      name="message"
-                      placeholder="Was möchten Sie mir mitteilen?"
-                      rows="6"
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-
-                <div class="field is-grouped is-grouped-right mt-5">
-                  <div class="control">
-                    <button
-                      type="submit"
-                      class="button is-light is-outlined is-medium"
-                    >
-                      Nachricht senden
-                    </button>
-                  </div>
-                </div>
-              </form>
+            <div class="column is-6 has-text-centered">
+              <figure class="image is-inline-block">
+                <img
+                  class="is-rounded"
+                  src="me.jpg"
+                  alt="Foto von Alex"
+                  style="max-width: 350px; width: 100%"
+                />
+              </figure>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="projekte" class="section has-background-grey">
+        <div class="container">
+          <h2 class="title is-2 is-size-4-mobile has-text-light">
+            reincarnation@nzz:~$ projects
+          </h2>
+
+          <div class="columns is-multiline">
+            <div class="column is-4">
+              <a
+                href="https://github.com/krinzhanovskyi/windows_reincarnation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="projekt1.png" alt="Projekt 1" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-4">Python Desktop Tool</p>
+                    <div class="content">
+                      Ein mit @PyQt6 entwickeltes Desktop-Utility zur Vorschau
+                      von Ordnerinhalten beim Hovern.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="column is-4">
+              <a
+                href="https://github.com/krinzhanovskyi/texter_reincarnation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="projekt2.png" alt="Projekt 2" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-4">Text schreiber</p>
+                    <div class="content">
+                      Simulation menschlicher Schreibgeschwindigkeit mit
+                      übermenschlicher Geschwindigkeit.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="column is-4">
+              <a
+                href="https://github.com/krinzhanovskyi/parcer_reincarnation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="projekt3.png" alt="Projekt 3" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-4 is-size-4-mobile">Parser</p>
+                    <div class="content">
+                      Daten aus verschiedenen Quellen mit Hilfe von @Dataclasses
+                      in einem gleichen Format zu speichern.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section is-medium has-background-dark">
+        <div class="container">
+          <h2 class="title is-2 is-size-4-mobile has-text-light">
+            reincarnation@nzz:~$ kontaktformular
+          </h2>
+
+          <div class="columns is-centered mt-5">
+            <div class="column is-7">
+              <div class="box has-background-grey-dark is-shadowless">
+                <form action="https://formspree.io/f/mkjojnrd" method="POST">
+                  <div class="field">
+                    <label class="label has-text-light">Name</label>
+                    <div class="control">
+                      <input
+                        class="input has-background-black-ter has-text-light"
+                        type="text"
+                        name="name"
+                        placeholder="Ihr Name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label has-text-light">E-Mail</label>
+                    <div class="control">
+                      <input
+                        class="input has-background-black-ter has-text-light"
+                        type="email"
+                        name="email"
+                        placeholder="ihre.email@beispiel.com"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label has-text-light">Nachricht</label>
+                    <div class="control">
+                      <textarea
+                        class="textarea has-background-black-ter has-text-light"
+                        name="message"
+                        placeholder="Was möchten Sie mir mitteilen?"
+                        rows="6"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="field is-grouped is-grouped-right mt-5">
+                    <div class="control">
+                      <button
+                        type="submit"
+                        class="button is-light is-outlined is-medium"
+                      >
+                        Nachricht senden
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer pb-6 pt-6 has-background-dark">
       <div class="content has-text-centered has-text-light">
         <p>
